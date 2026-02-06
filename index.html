@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yuheng Pan — Software Engineer | Distributed Systems</title>
+  <meta name="description"
+    content="Yuheng Pan — MCS @ UIUC. Distributed systems and backend engineering (Go/Python). Projects: HyDFS, RainStorm, GopherAI." />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Optional: nicer link previews -->
+  <meta property="og:title" content="Yuheng Pan — Software Engineer | Distributed Systems" />
+  <meta property="og:description"
+    content="MCS @ UIUC. Distributed systems & backend engineering (Go/Python). HyDFS, RainStorm, GopherAI." />
+  <meta property="og:type" content="website" />
+
+  <!-- Basic structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Yuheng Pan",
+    "email":"mailto:yuhengp2@illinois.edu",
+    "alumniOf":[
+      {"@type":"CollegeOrUniversity","name":"University of Illinois Urbana-Champaign"},
+      {"@type":"CollegeOrUniversity","name":"University of Michigan"},
+      {"@type":"CollegeOrUniversity","name":"Shanghai Jiao Tong University"}
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Yuheng Pan</a>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <a class="btn btn-ghost" href="./YuhengPan_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <p class="kicker">Software Engineer • Distributed Systems • Backend (Go/Python)</p>
+        <h1>Building reliable systems and data-driven products.</h1>
+
+        <p class="lead">
+          MCS at UIUC (expected 2027). I build distributed systems, backend services, and practical ML tooling—
+          from a Cassandra-inspired file system to production-style Go APIs.
+        </p>
+
+        <div class="links">
+          <a class="btn" href="./YuhengPan_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+          <a class="btn btn-ghost" href="mailto:yuhengp2@illinois.edu">Email</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/yuheng-pan-8698032a3/" target="_blank"
+            rel="noopener">LinkedIn</a>
+          <!-- Replace with your actual GitHub -->
+          <a class="btn btn-ghost" href="https://github.com/USERNAME" target="_blank" rel="noopener">GitHub</a>
+        </div>
+
+        <ul class="quick-facts">
+          <li>Go, Python, SQL, C/C++, Java</li>
+          <li>Distributed systems: replication, failure recovery, consistency</li>
+          <li>Urbana, IL (open to internships / new grad)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured Projects</h2>
+          <p class="muted">A few projects that best represent my systems + product work.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>HyDFS — Distributed File System</h3>
+            <p class="muted">Cassandra-inspired design with replication, recovery, and rebalancing across VMs.</p>
+            <ul>
+              <li>Replication + failure recovery + rebalancing across ~10 VMs.</li>
+              <li>Append ordering, read-my-writes, eventual consistency via versioned block merges.</li>
+              <li>Integrated into a Storm-like stream system (RainStorm) for multi-stage tuple processing.</li>
+            </ul>
+            <div class="meta">
+              <span class="tag">Go</span>
+              <span class="tag">Distributed Systems</span>
+              <span class="tag">Consistency</span>
+            </div>
+            <div class="card-links">
+              <!-- Replace placeholders -->
+              <a href="https://github.com/USERNAME/hydfs" target="_blank" rel="noopener">Code</a>
+              <a href="#" target="_blank" rel="noopener">Write-up</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>GopherAI — Go AI Service Platform</h3>
+            <p class="muted">REST + streaming chat with pluggable model backends and auth/session control.</p>
+            <ul>
+              <li>Gin-based APIs: health, sessions, history; middleware-ready routing.</li>
+              <li>OpenAI-compatible + Ollama backends; supports sync + SSE streaming.</li>
+              <li>JWT auth, session management, role-based permissions; ONNX image recognition demo.</li>
+            </ul>
+            <div class="meta">
+              <span class="tag">Go</span>
+              <span class="tag">APIs</span>
+              <span class="tag">Auth/JWT</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/USERNAME/gopherai" target="_blank" rel="noopener">Code</a>
+              <a href="#" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>H1B Sponsorship Analysis Add-on</h3>
+            <p class="muted">MVP for interactive exploration of OPT/H1B sponsorship trends.</p>
+            <ul>
+              <li>Visualized 10 years of sponsorship data with interactive selection and filtering.</li>
+              <li>Did user/market analysis and cost–revenue modeling for feasibility.</li>
+            </ul>
+            <div class="meta">
+              <span class="tag">Python</span>
+              <span class="tag">Data Visualization</span>
+              <span class="tag">Product Thinking</span>
+            </div>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noopener">Code</a>
+              <a href="#" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </article>
+
+          <!-- Slot for a "Not on resume" project -->
+          <article class="card card-soft">
+            <h3>More Projects</h3>
+            <p class="muted">
+              Add project cards here for items not on your resume—especially anything with a public demo link.
+            </p>
+            <ul>
+              <li>Keep each to 1–2 bullets + clear URL (Demo / GitHub).</li>
+              <li>Prioritize projects that show depth: design decisions, tradeoffs, benchmarks.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="item">
+            <div class="item-head">
+              <h3>Software Engineer Intern — Shanghai Sodick Software Co. Ltd</h3>
+              <span class="muted">Nov 2023 – Feb 2024 • Shanghai, China</span>
+            </div>
+            <ul>
+              <li>Built an SQL-based tool for data gathering/analysis with regex-based extraction from industry files.
+              </li>
+              <li>Ensured compatibility with remote database systems.</li>
+              <li>Developed interactive dashboards with WPF for real-time visualization.</li>
+            </ul>
+            <div class="meta">
+              <span class="tag">SQL</span>
+              <span class="tag">Regex</span>
+              <span class="tag">WPF</span>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="item-head">
+              <h3>Undergraduate Research Assistant — University of Michigan</h3>
+              <span class="muted">Feb 2024 – Feb 2025</span>
+            </div>
+            <ul>
+              <li>Designed an ML-based tracking tool to generate binary masks for slender moving objects in complex
+                environments.</li>
+              <li>Performed motion analysis to support mechanical engineering research on granular media interactions.
+              </li>
+            </ul>
+            <div class="meta">
+              <span class="tag">ML</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Research</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+        </div>
+
+        <div class="skills">
+          <div class="skill-block">
+            <h3>Languages</h3>
+            <p>C/C++, Go, Python, SQL, Java, C#</p>
+          </div>
+          <div class="skill-block">
+            <h3>Systems</h3>
+            <p>Operating Systems, Distributed Systems, Computer Networks</p>
+          </div>
+          <div class="skill-block">
+            <h3>Development</h3>
+            <p>Backend APIs, Data pipelines, Full-stack fundamentals</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Education</h2>
+        </div>
+
+        <div class="edu">
+          <div class="item">
+            <h3>University of Illinois Urbana-Champaign — MCS</h3>
+            <p class="muted">Sep 2025 – Jan 2027 (Expected)</p>
+          </div>
+          <div class="item">
+            <h3>University of Michigan — B.S. Computer Science (Dean’s List)</h3>
+            <p class="muted">Sep 2023 – May 2025</p>
+          </div>
+          <div class="item">
+            <h3>Shanghai Jiao Tong University — B.Eng. Electrical & Computer Engineering (Undergrad Excellence
+              Scholarship)</h3>
+            <p class="muted">Sep 2021 – Aug 2025</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Fastest way to reach me is email.</p>
+        </div>
+
+        <div class="contact">
+          <a class="btn" href="mailto:yuhengp2@illinois.edu">yuhengp2@illinois.edu</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/yuheng-pan-8698032a3/" target="_blank"
+            rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/USERNAME" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="muted">© <span id="y"></span> Yuheng Pan</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

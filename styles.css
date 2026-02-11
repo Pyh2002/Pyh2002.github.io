@@ -94,14 +94,21 @@ a:hover {
     gap: 22px;
 }
 
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 0;
+}
+
 .hero-summary {
     min-width: 0;
 }
 
 .hero-photo {
     width: 180px;
-    height: 180px;
-    object-fit: cover;
+    height: auto;
+    aspect-ratio: 780 / 1134;
     border-radius: 18px;
     border: 1px solid var(--line);
     box-shadow: var(--shadow);
@@ -192,6 +199,10 @@ h1 {
     margin-top: 14px;
 }
 
+.grid-one {
+    grid-template-columns: 1fr;
+}
+
 @media (max-width:860px) {
     h1 {
         font-size: 34px
@@ -204,7 +215,7 @@ h1 {
 
     .hero-photo {
         width: 160px;
-        height: 160px;
+        height: auto;
         align-self: center;
     }
 
